@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import {Alexandria, Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const alexandria = Alexandria({
+/*const alexandria = Alexandria({
   weight: '400',
   subsets: ['latin'],
-})
+})*/
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html dir="rtl" lang="en">
       <body
-        className={`${alexandria.className} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
