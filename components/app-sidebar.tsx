@@ -34,6 +34,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import { Separator } from "./ui/separator"
 
 const data = {
   user: {
@@ -43,12 +44,12 @@ const data = {
   },
   navMain: [
     {
-      title: "Dashboard",
+      title: "الرئيسيه",
       url: "#",
       icon: IconDashboard,
     },
     {
-      title: "Lifecycle",
+      title: "الطلبات",
       url: "#",
       icon: IconListDetails,
     },
@@ -164,9 +165,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             >
               <a href="#">
                 <Image className=" rounded-full" src={logo} alt="logo" width={30}/>
-                <span className="text-base font-semibold">زول سوق | لوحة الإدارة.</span>
+                <span className="text-base font-medium">زول سوق | لوحة الإدارة.</span>
               </a>
             </SidebarMenuButton>
+            
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
